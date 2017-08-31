@@ -6,13 +6,12 @@
 Public Class Calc
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         '---Entrada de Dados----'
-        Dim base As Double = Convert.ToDouble(txtbase)
-        Dim Altura As Double = Convert.ToDouble(txtaltura)
-        Dim Fck As Integer = Convert.ToInt32(txtfck) / 1.4
-        Dim Fyk As Integer = Convert.ToInt32(txtfyk) / 1.15
-        Dim γsp As Double = Convert.ToDouble(txtprotensao)
-        Dim Momento As Double = Convert.ToDouble(txtmomento)
-        Dim EsfNormal As Double = Convert.ToDouble(txtforca)
+        Dim base As Double = Convert.ToDouble(txtbase.Text)
+        Dim Altura As Double = Convert.ToDouble(txtaltura.Text)
+        Dim Fck As Integer = Convert.ToInt32(txtfck.Text) / 1.4
+        Dim Fyk As Integer = Convert.ToInt32(txtfyk.Text) / 1.15
+        Dim γsp As Double = Convert.ToDouble(txtprotensao.Text)
+        Dim EsfNormal As Double = Convert.ToDouble(txtforca.Text)
         Dim Esc As Integer = 210000
         Dim nc As Integer = 100
 
@@ -39,4 +38,11 @@ Public Class Calc
 
     End Sub
 
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
+    End Sub
 End Class
